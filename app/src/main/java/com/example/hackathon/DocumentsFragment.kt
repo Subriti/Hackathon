@@ -10,14 +10,14 @@ import android.view.ViewGroup
 import android.widget.*
 import java.util.*
 
-class SignUpFragment : Fragment(), AdapterView.OnItemSelectedListener {
+class DocumentsFragment : Fragment(),AdapterView.OnItemSelectedListener {
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val v = inflater.inflate(R.layout.sign_up_fragment, container, false)
+        val v = inflater.inflate(R.layout.fragment_documents, container, false)
 
         val register_btn = v.findViewById<Button>(R.id.submit_btn)
         register_btn.setOnClickListener {
@@ -27,27 +27,7 @@ class SignUpFragment : Fragment(), AdapterView.OnItemSelectedListener {
             startActivity(intent)
         }
 
-        val c = Calendar.getInstance()
-        val year = c.get(Calendar.YEAR)
-        val month = c.get(Calendar.MONTH)
-        val day = c.get(Calendar.DAY_OF_MONTH)
-
-        val pickDatebtn = v.findViewById<ImageView>(R.id.pickDatebtn)
-        val birthDate = v.findViewById<TextView>(R.id.birthDate)
-        pickDatebtn.setOnClickListener {
-            val datepickerdialog = context?.let { it1 ->
-                DatePickerDialog(
-                    it1, DatePickerDialog.OnDateSetListener { view, mYear, mMonth, mDay ->
-                        birthDate.setText("" + mDay + "/" + mMonth + "/" + mYear)
-                    }, year, month, day
-                )
-            }
-            if (datepickerdialog != null) {
-                datepickerdialog.show()
-            }
-            }
-
-        val spinner: Spinner = v.findViewById(R.id.spinner)
+        val spinner: Spinner = v.findViewById(R.id.spinner2)
 // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter.createFromResource(
             requireContext(),
@@ -57,28 +37,15 @@ class SignUpFragment : Fragment(), AdapterView.OnItemSelectedListener {
             // Specify the layout to use when the list of choices appears
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             // Apply the adapter to the spinner
-
             spinner.adapter = adapter
-
             spinner.onItemSelectedListener=this
         }
-/*
-        val secondFragment = Fragment2()
-        val secondfragmentBtn = v.findViewById<Button>(R.id.fragmentbutton2)
 
-        secondfragmentBtn.setOnClickListener {
-            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
-            transaction.replace(R.id.ReplaceLayout, secondFragment)
-            transaction.addToBackStack(null)
-            transaction.commit()
-        }*/
         return v
-        //val mainActivity= MainActivity()
-        //mainActivity.supportFragmentManager
     }
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, pos: Int, id: Long) {
-       // val selection= parent?.getItemAtPosition(pos)
+        // val selection= parent?.getItemAtPosition(pos)
         val item= parent?.selectedItem
         //println(item)
         //Toast.makeText(context,"$item is selected", Toast.LENGTH_SHORT).show()
@@ -87,4 +54,5 @@ class SignUpFragment : Fragment(), AdapterView.OnItemSelectedListener {
     override fun onNothingSelected(p0: AdapterView<*>?) {
         TODO("Not yet implemented")
     }
+
 }
