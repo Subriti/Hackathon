@@ -4,10 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/drawable/ic_baseline_people_alt_24.xml" value="0.1" />
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/activity_bank_notif.xml" value="0.25" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/activity_bank_notifications.xml" value="0.1" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/activity_finddoner.xml" value="0.1875" />
-        <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/activity_profile.xml" value="0.16853932584269662" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/confirmation_prompt.xml" value="0.5" />
@@ -31,6 +32,7 @@
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/statement_item.xml" value="0.1875" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/transaction_item.xml" value="0.33" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/menu/bottom_nav.xml" value="0.1" />
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon/app/src/main/res/layout/fragment_sign_up.xml" value="0.1" />
