@@ -1,14 +1,13 @@
 
+import android.app.DatePickerDialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.Spinner
+import android.widget.*
 import androidx.fragment.app.Fragment
 import com.example.hackathon.R
+import java.util.*
 
 
 class FindDonorFragment : Fragment(),AdapterView.OnItemSelectedListener {
@@ -18,6 +17,27 @@ class FindDonorFragment : Fragment(),AdapterView.OnItemSelectedListener {
     ): View? {
 
         val v=inflater.inflate(R.layout.fragment_find_donor, container, false)
+
+        val c = Calendar.getInstance()
+        val year = c.get(Calendar.YEAR)
+        val month = c.get(Calendar.MONTH)
+        val day = c.get(Calendar.DAY_OF_MONTH)
+
+        val pickDatebtn = v.findViewById<ImageView>(R.id.pickDatebtn4)
+        val donationDate = v.findViewById<TextView>(R.id.date)
+        pickDatebtn.setOnClickListener {
+            val datepickerdialog = context?.let { it1 ->
+                DatePickerDialog(
+                    it1, DatePickerDialog.OnDateSetListener { view, mYear, mMonth, mDay ->
+                        donationDate.setText("" + mDay + "/" + mMonth + "/" + mYear)
+                    }, year, month, day
+                )
+            }
+            if (datepickerdialog != null) {
+                datepickerdialog.show()
+            }
+        }
+
 
         val spinner: Spinner = v.findViewById(R.id.spinnerExplore)
         // Create an ArrayAdapter using the string array and a default spinner layout
