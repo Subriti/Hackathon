@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         val appName = findViewById<TextView>(R.id.app_name)
         val login_btn = findViewById<Button>(R.id.login_btn)
         val loginUserBtn= findViewById<TextView>(R.id.login_user_btn)
+        val loginOrgBtn= findViewById<TextView>(R.id.login_org_btn)
 
         val phone = findViewById<EditText>(R.id.phone_field)
         val password = findViewById<EditText>(R.id.pass_field)
@@ -45,10 +46,23 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
         phone.visibility=View.GONE
         spinner.visibility=View.VISIBLE
+        loginOrgBtn.visibility=View.GONE
+        loginUserBtn.visibility=View.VISIBLE
 
         loginUserBtn.setOnClickListener {
             spinner.visibility = View.GONE
             phone.visibility=View.VISIBLE
+
+            loginOrgBtn.visibility=View.VISIBLE
+            loginUserBtn.visibility=View.GONE
+        }
+
+        loginOrgBtn.setOnClickListener {
+            spinner.visibility = View.VISIBLE
+            phone.visibility=View.GONE
+
+            loginOrgBtn.visibility=View.GONE
+            loginUserBtn.visibility=View.VISIBLE
         }
 
         register_btn.setOnClickListener {
