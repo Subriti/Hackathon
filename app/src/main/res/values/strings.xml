@@ -23,8 +23,6 @@
         <item>Koteshwor</item>
         <item>Chobhar</item>
     </string-array>
-<<<<<<< HEAD
-=======
 
     <string name="donor1">Ram Shrestha</string>
     <string name="donor2">Shekhar Aryal</string>
@@ -50,6 +48,4 @@
     <string name="type4">Receiver</string>
     <string name="type5">Donor</string>
 
-
->>>>>>> 54709c319329d1983d9338471d39e7420a6a2f6d
 </resources>

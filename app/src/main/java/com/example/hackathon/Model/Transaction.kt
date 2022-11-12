@@ -1,4 +1,4 @@
-data class Explore(val ImageURL: String, var donorName: Int, var bGroup: Int, var addresss: Int, var types1: Int){
+data class Transaction(val ImageURL: String, var donorName: Int, var bGroup: Int, var addresss: Int, var types1: Int){
     fun getName(): Int {
         return donorName
     }

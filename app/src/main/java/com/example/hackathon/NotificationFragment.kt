@@ -13,10 +13,6 @@ import java.io.IOException
 
 class NotificationFragment : Fragment() {
 
-    private lateinit var playBtn: Button
-    var mediaPlayer: MediaPlayer? = null
-    var isPlaying = false
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

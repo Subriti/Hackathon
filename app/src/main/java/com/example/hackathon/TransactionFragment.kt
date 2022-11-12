@@ -1,20 +1,16 @@
-import ExploreDatasource
-import android.media.AudioManager
-import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.MusicPlayer.Adapters.ExploreAdapter
+import com.example.MusicPlayer.Adapters.TransactionAdapter
 import com.example.hackathon.R
 
 
-class ExploreFragment : Fragment() {
+class TransactionFragment : Fragment() {
     var resource: String? = null
 
     override fun onCreateView(
@@ -22,9 +18,9 @@ class ExploreFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val v = inflater.inflate(R.layout.fragment_explore, container, false)
+        val v = inflater.inflate(R.layout.fragment_transactions, container, false)
         // Initialize data.
-        val donorDataset = ExploreDatasource().loadSongs()
+        val donorDataset = TransactionDatasource().loadSongs()
 
         val recyclerView = v.findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(context)
@@ -32,7 +28,7 @@ class ExploreFragment : Fragment() {
         val image = v.findViewById<ImageView>(R.id.donor_image)
 
         var adapter = context?.let {
-            ExploreAdapter(it, donorDataset) { users->
+            TransactionAdapter(it, donorDataset) { users->
                 //got stringId
                 val name = users.getName()
                 val address= users.getAddress()

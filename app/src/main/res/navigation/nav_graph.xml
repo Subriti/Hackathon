@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/transactions"
-        android:name="ExploreFragment"
+        android:name="TransactionFragment"
         android:label="Recent Transactions"
-        tools:layout="@layout/fragment_explore" />
+        tools:layout="@layout/fragment_transactions" />
 </navigation>

@@ -62,27 +62,12 @@ class SignUpFragment : Fragment(), AdapterView.OnItemSelectedListener {
 
             spinner.onItemSelectedListener=this
         }
-/*
-        val secondFragment = Fragment2()
-        val secondfragmentBtn = v.findViewById<Button>(R.id.fragmentbutton2)
-
-        secondfragmentBtn.setOnClickListener {
-            val transaction: FragmentTransaction = requireFragmentManager().beginTransaction()
-            transaction.replace(R.id.ReplaceLayout, secondFragment)
-            transaction.addToBackStack(null)
-            transaction.commit()
-        }*/
         return v
-        //val mainActivity= MainActivity()
-        //mainActivity.supportFragmentManager
     }
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, pos: Int, id: Long) {
-       // val selection= parent?.getItemAtPosition(pos)
         val item= parent?.selectedItem
-        //println(item)
-        //Toast.makeText(context,"$item is selected", Toast.LENGTH_SHORT).show()
-    }
+       }
 
     override fun onNothingSelected(p0: AdapterView<*>?) {
         TODO("Not yet implemented")
