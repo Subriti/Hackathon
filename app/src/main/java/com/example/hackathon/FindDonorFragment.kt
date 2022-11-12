@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import com.example.hackathon.R
 import java.util.*
@@ -17,6 +18,20 @@ class FindDonorFragment : Fragment(),AdapterView.OnItemSelectedListener {
     ): View? {
 
         val v=inflater.inflate(R.layout.fragment_find_donor, container, false)
+
+
+        val progressBar= v.findViewById<ProgressBar>(R.id.progressBar)
+        progressBar.visibility=View.GONE
+
+
+        val donorList= v.findViewById<ConstraintLayout>(R.id.donor_list)
+        donorList.visibility=View.GONE
+
+        val find= v.findViewById<Button>(R.id.find_donor_btn)
+        find.setOnClickListener {
+            progressBar.visibility=View.VISIBLE
+            donorList.visibility=View.VISIBLE
+        }
 
         val c = Calendar.getInstance()
         val year = c.get(Calendar.YEAR)

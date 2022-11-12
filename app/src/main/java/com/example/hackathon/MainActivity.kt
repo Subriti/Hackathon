@@ -79,9 +79,10 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                 appName.visibility = View.GONE
                 loginUserBtn.visibility=View.GONE
                 spinner.visibility=View.GONE
+                loginOrgBtn.visibility=View.GONE
 
-
-                //emergency.visibility = View.GONE }
+                //emergency.visibility = View.GONE
+            }
         }
 
 
