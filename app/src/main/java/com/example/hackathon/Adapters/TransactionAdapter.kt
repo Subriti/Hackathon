@@ -1,6 +1,6 @@
 package com.example.MusicPlayer.Adapters
 
-import Explore
+import Transaction
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -12,17 +12,17 @@ import com.bumptech.glide.Glide
 import com.example.hackathon.R
 
 
-class ExploreAdapter(private val context: Context, private var songDataset: List<Explore>, private val itemClick: (Explore)-> Unit) :
-    RecyclerView.Adapter<ExploreAdapter.ItemViewHolder>() {
+class TransactionAdapter(private val context: Context, private var songDataset: List<Transaction>, private val itemClick: (Transaction)-> Unit) :
+    RecyclerView.Adapter<TransactionAdapter.ItemViewHolder>() {
 
-    class ItemViewHolder(private val view: View, val itemClick: (Explore) -> Unit) : RecyclerView.ViewHolder(view) {
+    class ItemViewHolder(private val view: View, val itemClick: (Transaction) -> Unit) : RecyclerView.ViewHolder(view) {
         val imageView: ImageView = view.findViewById(R.id.donor_image)
         val textView: TextView = view.findViewById(R.id.donor_name)
         val textView1: TextView = view.findViewById(R.id.donor_address)
         val textView2: TextView= view.findViewById(R.id.donor_bloodGroup)
         val textView3: TextView= view.findViewById(R.id.type)
 
-        fun bindCategory(songs: Explore, context: Context) {
+        fun bindCategory(songs: Transaction, context: Context) {
             itemView.setOnClickListener { itemClick(songs) }
         }
 
@@ -31,7 +31,7 @@ class ExploreAdapter(private val context: Context, private var songDataset: List
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         // create a new view
         val adapterLayout = LayoutInflater.from(parent.context)
-            .inflate(R.layout.explore_item, parent, false)
+            .inflate(R.layout.transaction_item, parent, false)
 
         return ItemViewHolder(adapterLayout, itemClick)
     }

@@ -1,6 +1,6 @@
 package com.example.hackathon
 
-import ExploreFragment
+import TransactionFragment
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         val signupFragment = SignUpFragment()
         val emergencyFragment = EmergencyFragment()
-        val exploreFragment= ExploreFragment()
+        val transactionFragment= TransactionFragment()
 
         val logo = findViewById<ImageView>(R.id.app_logo)
         val appName = findViewById<TextView>(R.id.app_name)
@@ -45,8 +45,13 @@ class MainActivity : AppCompatActivity() {
         login_btn.setOnClickListener {
             Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
 
-            val intent = Intent(this, ProfileActivity::class.java)
+           val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
+
+            /*val intent = Intent(Intent.ACTION_VIEW)
+            intent.setData(Uri.parse("http://www.google.com"))
+            startActivity(intent)*/
+
 
           /*  supportFragmentManager.beginTransaction().apply {
                 replace(R.id.replace_layout, exploreFragment)
