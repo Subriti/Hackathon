@@ -4,22 +4,27 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/drawable/ic_baseline_people_alt_24.xml" value="0.1" />
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/activity_bank_notifications.xml" value="0.1" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/activity_finddoner.xml" value="0.1875" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/activity_profile.xml" value="0.16853932584269662" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/confirmation_prompt.xml" value="0.5" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/emergency_fragment.xml" value="0.25" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/explore_item.xml" value="0.5" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/fragment_albums.xml" value="0.1" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/fragment_artists.xml" value="0.1" />
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/fragment_bank_notif.xml" value="0.33" />
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/fragment_bloodBank_notifications.xml" value="0.15" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/fragment_documents.xml" value="0.33" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/fragment_explore.xml" value="0.1875" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/fragment_explorebox.xml" value="0.1875" />
-        <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/fragment_find_donor.xml" value="0.2" />
-        <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/fragment_notifications.xml" value="0.5" />
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/fragment_find_donor.xml" value="0.5" />
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/fragment_notifications.xml" value="0.22" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/fragment_payment.xml" value="0.25" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/fragment_transactions.xml" value="0.1875" />
+        <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/rating_prompt.xml" value="0.25" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/recent_donations_item.xml" value="0.33" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/sign_up_fragment.xml" value="0.33" />
         <entry key="..\:/Users/Subriti/AndroidStudioProjects/Hackathon - Copy/app/src/main/res/layout/song_item.xml" value="0.1" />

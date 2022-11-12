@@ -79,14 +79,15 @@ class MainActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                 appName.visibility = View.GONE
                 loginUserBtn.visibility=View.GONE
                 spinner.visibility=View.GONE
-                //emergency.visibility = View.GONE
-            }
+
+
+                //emergency.visibility = View.GONE }
         }
 
 
 
         login_btn.setOnClickListener {
-            Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
 
            val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)

@@ -38,7 +38,7 @@ class SignUpFragment : Fragment(), AdapterView.OnItemSelectedListener {
             val datepickerdialog = context?.let { it1 ->
                 DatePickerDialog(
                     it1, DatePickerDialog.OnDateSetListener { view, mYear, mMonth, mDay ->
-                        birthDate.setText("" + mDay + "/" + mMonth + "/" + mYear)
+                        birthDate.text = "" + mDay + "/" + mMonth + "/" + mYear
                     }, year, month, day
                 )
             }
