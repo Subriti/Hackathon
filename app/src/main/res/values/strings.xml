@@ -12,4 +12,41 @@
         <item>AB-</item>
         <item>O-</item>
     </string-array>
+
+    <string-array name="location_array">
+        <item>Baneshwor</item>
+        <item>Patan</item>
+        <item>Kirtipur</item>
+        <item>Bhaktapur</item>
+        <item>Bouddha</item>
+        <item>Kuleshwor</item>
+        <item>Koteshwor</item>
+        <item>Chobhar</item>
+    </string-array>
+
+    <string name="donor1">Ram Shrestha</string>
+    <string name="donor2">Shekhar Aryal</string>
+    <string name="donor3">Tenzing Lama</string>
+    <string name="donor4">Bibhuti Maharjan</string>
+    <string name="donor5">Shweta Bishwakarma</string>
+
+    <string name="bloodGroup1">B+</string>
+    <string name="bloodGroup2">O-</string>
+    <string name="bloodGroup3">A+</string>
+    <string name="bloodGroup4">AB+</string>
+    <string name="bloodGroup5">B+</string>
+
+    <string name="address1">Ram Shrestha</string>
+    <string name="address2">Shekhar Aryal</string>
+    <string name="address3">Tenzing Lama</string>
+    <string name="address4">Bibhuti Maharjan</string>
+    <string name="address5">Shweta Bishwakarma</string>
+
+    <string name="type1">Receiver</string>
+    <string name="type2">Donor</string>
+    <string name="type3">Donor</string>
+    <string name="type4">Receiver</string>
+    <string name="type5">Donor</string>
+
+
 </resources>
