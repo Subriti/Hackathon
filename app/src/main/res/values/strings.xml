@@ -12,4 +12,15 @@
         <item>AB-</item>
         <item>O-</item>
     </string-array>
+
+    <string-array name="location_array">
+        <item>Baneshwor</item>
+        <item>Patan</item>
+        <item>Kirtipur</item>
+        <item>Bhaktapur</item>
+        <item>Bouddha</item>
+        <item>Kuleshwor</item>
+        <item>Koteshwor</item>
+        <item>Chobhar</item>
+    </string-array>
 </resources>

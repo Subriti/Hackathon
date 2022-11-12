@@ -47,7 +47,7 @@ class SignUpFragment : Fragment(), AdapterView.OnItemSelectedListener {
             }
             }
 
-        val spinner: Spinner = v.findViewById(R.id.spinner)
+        val spinner: Spinner = v.findViewById(R.id.spinnerExplore)
 // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter.createFromResource(
             requireContext(),

@@ -19,13 +19,8 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_marginTop="20dp"
         android:text="Medical Proof: "
-=======
-        android:layout_marginTop="16dp"
-        android:text="Medical proof"
->>>>>>> 2770e7e9d0fa054fdb98bc88528ecd70c5fca98d
         app:layout_constraintBottom_toTopOf="@+id/submit_btn"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -34,15 +29,11 @@
         android:id="@+id/pickDatebtn3"
         android:layout_width="35dp"
         android:layout_height="35dp"
-<<<<<<< HEAD
         android:layout_marginTop="32dp"
-=======
-        android:layout_marginTop="8dp"
->>>>>>> 2770e7e9d0fa054fdb98bc88528ecd70c5fca98d
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/birthDate"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerExplore"
         app:srcCompat="@drawable/medical_history" />
 
     <TextView
@@ -90,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinnerExplore"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
