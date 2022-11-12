@@ -23,4 +23,33 @@
         <item>Koteshwor</item>
         <item>Chobhar</item>
     </string-array>
+<<<<<<< HEAD
+=======
+
+    <string name="donor1">Ram Shrestha</string>
+    <string name="donor2">Shekhar Aryal</string>
+    <string name="donor3">Tenzing Lama</string>
+    <string name="donor4">Bibhuti Maharjan</string>
+    <string name="donor5">Shweta Bishwakarma</string>
+
+    <string name="bloodGroup1">B+</string>
+    <string name="bloodGroup2">O-</string>
+    <string name="bloodGroup3">A+</string>
+    <string name="bloodGroup4">AB+</string>
+    <string name="bloodGroup5">B+</string>
+
+    <string name="address1">Ram Shrestha</string>
+    <string name="address2">Shekhar Aryal</string>
+    <string name="address3">Tenzing Lama</string>
+    <string name="address4">Bibhuti Maharjan</string>
+    <string name="address5">Shweta Bishwakarma</string>
+
+    <string name="type1">Receiver</string>
+    <string name="type2">Donor</string>
+    <string name="type3">Donor</string>
+    <string name="type4">Receiver</string>
+    <string name="type5">Donor</string>
+
+
+>>>>>>> 54709c319329d1983d9338471d39e7420a6a2f6d
 </resources>

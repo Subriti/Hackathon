@@ -1,12 +1,11 @@
 package com.example.hackathon
 
+import ExploreFragment
 import android.content.Intent
-import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
-import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val signupFragment = SignUpFragment()
-        val emergencyFragment = DocumentsFragment()
+        val emergencyFragment = EmergencyFragment()
+        val exploreFragment= ExploreFragment()
 
         val logo = findViewById<ImageView>(R.id.app_logo)
         val appName = findViewById<TextView>(R.id.app_name)
@@ -44,14 +44,12 @@ class MainActivity : AppCompatActivity() {
 
         login_btn.setOnClickListener {
             Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
-        }
 
-        emergency.setOnClickListener {
-            /* val intent = Intent(this, DocumentsFragment::class.java)
+            val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
-*/
-            supportFragmentManager.beginTransaction().apply {
-                replace(R.id.replace_layout, emergencyFragment)
+
+          /*  supportFragmentManager.beginTransaction().apply {
+                replace(R.id.replace_layout, exploreFragment)
                 //addToBackStack(null)
                 commit()
                 login_btn.visibility = View.GONE
@@ -63,7 +61,27 @@ class MainActivity : AppCompatActivity() {
                 appName.visibility = View.GONE
                 emergency.visibility = View.GONE
 
-            }
-        }
-    }
+            }*/
+}
+
+emergency.setOnClickListener {
+/* val intent = Intent(this, DocumentsFragment::class.java)
+startActivity(intent)
+*/
+supportFragmentManager.beginTransaction().apply {
+   replace(R.id.replace_layout, emergencyFragment)
+   //addToBackStack(null)
+   commit()
+   login_btn.visibility = View.GONE
+   register_btn.visibility = View.GONE
+   phone.visibility = View.GONE
+   password.visibility = View.GONE
+   text.visibility = View.GONE
+   logo.visibility = View.GONE
+   appName.visibility = View.GONE
+   emergency.visibility = View.GONE
+
+}
+}
+}
 }
