@@ -47,10 +47,8 @@
             android:inputType="phone"
             android:minHeight="48dp"
             android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="@id/replace_layout"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="@id/replace_layout"
-            app:layout_constraintTop_toBottomOf="@id/app_name" />
+            app:layout_constraintStart_toStartOf="@+id/pass_field"
+            app:layout_constraintTop_toBottomOf="@+id/bloodBank_name" />
 
         <EditText
             android:id="@+id/pass_field"
@@ -62,7 +60,7 @@
             android:minHeight="48dp"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/phone_field" />
 
@@ -78,24 +76,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/pass_field" />
 
-        <Button
-            android:id="@+id/Emergency"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:text="Emergency Search"
-            android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/registerText" />
-
         <TextView
             android:id="@+id/registerText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
-            android:text="Don't have an account? "
+            android:text="Want to be a helping hand? "
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.358"
             app:layout_constraintStart_toStartOf="parent"
@@ -114,6 +100,28 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/registerText"
             app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+
+        <TextView
+            android:id="@+id/login_user_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Login as User"
+            android:textColor="#B1043F"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registerText" />
+
+        <Spinner
+            android:id="@+id/bloodBank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="@+id/phone_field"
+            app:layout_constraintTop_toBottomOf="@+id/app_name" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

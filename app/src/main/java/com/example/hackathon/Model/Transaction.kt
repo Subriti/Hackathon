@@ -1,14 +1,11 @@
-data class Transaction(val ImageURL: String, var donorName: Int, var bGroup: Int, var addresss: Int, var types1: Int){
+data class Transaction(val ImageURL: String, var donorName: Int, var addresss: Int, var dates: Int){
     fun getName(): Int {
         return donorName
-    }
-    fun getBloodGroup(): Int {
-        return bGroup
     }
     fun getAddress(): Int {
         return addresss
     }
-    fun getTypes(): Int {
-        return types1
+    fun getDate(): Int {
+        return dates
     }
 }

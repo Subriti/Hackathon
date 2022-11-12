@@ -32,8 +32,6 @@ class TransactionFragment : Fragment() {
                 //got stringId
                 val name = users.getName()
                 val address= users.getAddress()
-                val bloodGroup= users.getBloodGroup()
-                val type= users.getTypes()
 
                 //gives string name
                 //val songName= resources.getResourceEntryName(name)
@@ -42,8 +40,6 @@ class TransactionFragment : Fragment() {
                 //converted it to string value
                 resource = resources.getString(name)
                 val add= resources.getString(address)
-                val blood= resources.getString(bloodGroup)
-                val types= resources.getString(type)
             }
 
         }

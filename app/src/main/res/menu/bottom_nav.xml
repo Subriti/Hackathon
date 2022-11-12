@@ -3,7 +3,7 @@
     <item
         android:id="@+id/findDonor"
         android:icon="@drawable/search"
-        android:title="Find Donor" />
+        android:title="Request Donor" />
     <item
         android:id="@+id/notification"
         android:icon="@drawable/notification_bell"
@@ -11,5 +11,5 @@
     <item
         android:id="@+id/transactions"
         android:icon="@drawable/medical_history"
-        android:title="Transactions" />
+        android:title="History" />
 </menu>

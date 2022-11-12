@@ -13,6 +13,15 @@
         <item>O-</item>
     </string-array>
 
+    <string-array name="banks_array">
+        <item>Civil Bank</item>
+        <item>NIC Asia</item>
+        <item>Global Bank</item>
+        <item>Machhapuchre Bank</item>
+        <item>Prabhu Bank</item>
+        <item>Standard Chatered</item>
+    </string-array>
+
     <string-array name="location_array">
         <item>Baneshwor</item>
         <item>Patan</item>
@@ -24,28 +33,33 @@
         <item>Chobhar</item>
     </string-array>
 
-    <string name="donor1">Ram Shrestha</string>
-    <string name="donor2">Shekhar Aryal</string>
-    <string name="donor3">Tenzing Lama</string>
-    <string name="donor4">Bibhuti Maharjan</string>
-    <string name="donor5">Shweta Bishwakarma</string>
+    <string name="donor1">Patan Hospital</string>
+    <string name="donor2">RedCross</string>
+    <string name="donor3">Gangalal Hospital</string>
+    <string name="donor4">Teaching Hospital</string>
+    <string name="donor5">RedCross</string>
 
-    <string name="bloodGroup1">B+</string>
-    <string name="bloodGroup2">O-</string>
-    <string name="bloodGroup3">A+</string>
-    <string name="bloodGroup4">AB+</string>
-    <string name="bloodGroup5">B+</string>
+    <string name="dateOfDonation1">2022-08-12</string>
+    <string name="dateOfDonation2">2022-07-10</string>
+    <string name="dateOfDonation3">2022-06-01</string>
+    <string name="dateOfDonation4">2022-04-05</string>
+    <string name="dateOfDonation5">2022-02-02</string>
 
-    <string name="address1">Ram Shrestha</string>
-    <string name="address2">Shekhar Aryal</string>
-    <string name="address3">Tenzing Lama</string>
-    <string name="address4">Bibhuti Maharjan</string>
-    <string name="address5">Shweta Bishwakarma</string>
+    <string name="address1">Patan</string>
+    <string name="address2">Kalanki</string>
+    <string name="address3">Bansbari</string>
+    <string name="address4">Maharajgunj</string>
+    <string name="address5">Maitighar</string>
 
-    <string name="type1">Receiver</string>
-    <string name="type2">Donor</string>
-    <string name="type3">Donor</string>
-    <string name="type4">Receiver</string>
-    <string name="type5">Donor</string>
+    <string-array name="bloodBankName_array">
+        <item>RedCross</item>
+        <item>Gangalal Hospital</item>
+        <item>Teaching Hospital</item>
+        <item>Bir Hospital</item>
+        <item>Nepal Medical College</item>
+        <item>Birendra Army Hospital</item>
+        <item>Patan Hospital</item>
+        <item>Nepal Police Hospital</item>
+    </string-array>
 
 </resources>

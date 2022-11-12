@@ -19,8 +19,7 @@ class TransactionAdapter(private val context: Context, private var songDataset: 
         val imageView: ImageView = view.findViewById(R.id.donor_image)
         val textView: TextView = view.findViewById(R.id.donor_name)
         val textView1: TextView = view.findViewById(R.id.donor_address)
-        val textView2: TextView= view.findViewById(R.id.donor_bloodGroup)
-        val textView3: TextView= view.findViewById(R.id.type)
+        val textView3: TextView= view.findViewById(R.id.donationDate)
 
         fun bindCategory(songs: Transaction, context: Context) {
             itemView.setOnClickListener { itemClick(songs) }
@@ -41,8 +40,7 @@ class TransactionAdapter(private val context: Context, private var songDataset: 
         Glide.with(context).load(item.ImageURL).into(holder.imageView)
         holder.textView.text = context.resources.getString(item.donorName)
         holder.textView1.text = context.resources.getString(item.addresss)
-        holder.textView2.text = context.resources.getString(item.bGroup)
-        holder.textView3.text = context.resources.getString(item.types1)
+        holder.textView3.text = context.resources.getString(item.dates)
 
         holder.bindCategory(songDataset[position],context)
     }

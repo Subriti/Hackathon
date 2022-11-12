@@ -81,10 +81,11 @@
 
     <Spinner
         android:id="@+id/spinnerExplore"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/pickDatebtn2" />
 
@@ -132,8 +133,8 @@
         android:id="@+id/submit_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="124dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="56dp"
         android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -242,11 +243,12 @@
 
     <TextView
         android:id="@+id/birthDate"
-        android:layout_width="93dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="3dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toStartOf="@+id/pickDatebtn"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
@@ -263,11 +265,14 @@
         android:id="@+id/imageButton"
         android:layout_width="35dp"
         android:layout_height="35dp"
+        android:layout_marginTop="12dp"
         android:background="@color/white"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/user"
-        tools:layout_editor_absoluteX="293dp"
-        tools:layout_editor_absoluteY="577dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/pickDatebtn3"
+        app:srcCompat="@drawable/user" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

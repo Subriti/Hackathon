@@ -20,6 +20,6 @@
     <fragment
         android:id="@+id/transactions"
         android:name="TransactionFragment"
-        android:label="Recent Transactions"
+        android:label="Previous History"
         tools:layout="@layout/fragment_transactions" />
 </navigation>
